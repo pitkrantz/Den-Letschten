@@ -11,6 +11,12 @@
 		94909ED82A325A9700FFC8D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909ED72A325A9700FFC8D1 /* ContentView.swift */; };
 		94909EDA2A325A9800FFC8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94909ED92A325A9800FFC8D1 /* Assets.xcassets */; };
 		94909EDD2A325A9800FFC8D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94909EDC2A325A9800FFC8D1 /* Preview Assets.xcassets */; };
+		94909EE42A325ECE00FFC8D1 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EE32A325ECE00FFC8D1 /* PersonView.swift */; };
+		94909EEC2A32653E00FFC8D1 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EEB2A32653E00FFC8D1 /* LeaderBoard.swift */; };
+		94909EEE2A327B5500FFC8D1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EED2A327B5500FFC8D1 /* Person.swift */; };
+		94909EF02A3290D900FFC8D1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EEF2A3290D900FFC8D1 /* AccountView.swift */; };
+		94909EF42A33155C00FFC8D1 /* AddDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EF32A33155C00FFC8D1 /* AddDrinks.swift */; };
+		94909EF62A33262C00FFC8D1 /* DrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EF52A33262C00FFC8D1 /* DrinkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		94909ED72A325A9700FFC8D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94909ED92A325A9800FFC8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94909EDC2A325A9800FFC8D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94909EE32A325ECE00FFC8D1 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		94909EE82A32624B00FFC8D1 /* Den-Letschten-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Den-Letschten-Info.plist"; sourceTree = SOURCE_ROOT; };
+		94909EEB2A32653E00FFC8D1 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
+		94909EED2A327B5500FFC8D1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		94909EEF2A3290D900FFC8D1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		94909EF32A33155C00FFC8D1 /* AddDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinks.swift; sourceTree = "<group>"; };
+		94909EF52A33262C00FFC8D1 /* DrinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,15 @@
 		94909ED42A325A9700FFC8D1 /* Den Letschten */ = {
 			isa = PBXGroup;
 			children = (
+				94909EE82A32624B00FFC8D1 /* Den-Letschten-Info.plist */,
 				94909ED52A325A9700FFC8D1 /* Den_LetschtenApp.swift */,
 				94909ED72A325A9700FFC8D1 /* ContentView.swift */,
+				94909EF32A33155C00FFC8D1 /* AddDrinks.swift */,
+				94909EF52A33262C00FFC8D1 /* DrinkButton.swift */,
+				94909EEF2A3290D900FFC8D1 /* AccountView.swift */,
+				94909EE32A325ECE00FFC8D1 /* PersonView.swift */,
+				94909EED2A327B5500FFC8D1 /* Person.swift */,
+				94909EEB2A32653E00FFC8D1 /* LeaderBoard.swift */,
 				94909ED92A325A9800FFC8D1 /* Assets.xcassets */,
 				94909EDB2A325A9800FFC8D1 /* Preview Content */,
 			);
@@ -137,6 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94909EF62A33262C00FFC8D1 /* DrinkButton.swift in Sources */,
+				94909EF02A3290D900FFC8D1 /* AccountView.swift in Sources */,
+				94909EF42A33155C00FFC8D1 /* AddDrinks.swift in Sources */,
+				94909EEE2A327B5500FFC8D1 /* Person.swift in Sources */,
+				94909EE42A325ECE00FFC8D1 /* PersonView.swift in Sources */,
+				94909EEC2A32653E00FFC8D1 /* LeaderBoard.swift in Sources */,
 				94909ED82A325A9700FFC8D1 /* ContentView.swift in Sources */,
 				94909ED62A325A9700FFC8D1 /* Den_LetschtenApp.swift in Sources */,
 			);
@@ -270,6 +296,7 @@
 				DEVELOPMENT_TEAM = F4GZPUKZXN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Den-Letschten-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,7 @@
 				DEVELOPMENT_TEAM = F4GZPUKZXN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Den-Letschten-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
