@@ -10,15 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            
+            AddDrinks()
+                .tabItem {
+                    Image(systemName: "wineglass")
+                }
             
             LeaderBoard()
                 .tabItem {
-                    Image(systemName: "clipboard")
+                    Image(systemName: "list.bullet.clipboard.fill")
                 }
             AccountView()
                 .tabItem {
-                    Image(systemName: "wineglass")
+                    Image(systemName: "person.circle")
                 }
         }
     }

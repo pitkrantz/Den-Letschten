@@ -11,7 +11,16 @@ struct AddDrinks: View {
     
     
     var body: some View {
-       DrinkButton()
+        VStack(spacing: 40) {
+            HStack(spacing: 40){
+                DrinkButton()
+                DrinkButton()
+            }
+            HStack(spacing: 40){
+                DrinkButton()
+                DrinkButton()
+            }
+        }
     }
 }
 
