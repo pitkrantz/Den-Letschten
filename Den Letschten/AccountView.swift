@@ -5,10 +5,16 @@
 //  Created by Pit Krantz on 09/06/2023.
 //
 
+import PhotosUI
 import SwiftUI
+
 
 struct AccountView: View {
     @State var username: String = ""
+    
+    @State var avatarItem: PhotosPickerItem?
+    @State var avatarImage: Image?
+    
     var body: some View {
         VStack{
             HStack{
@@ -24,16 +30,15 @@ struct AccountView: View {
                 }
                 .padding(.trailing, 40)
             }
-            Button {
-                print("Change Profil picture")
-            } label: {
-                Image(systemName: "person")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 100)
-                    .padding(.top, 80)
+            PhotosPicker(selection: $avatarItem, matching: .images){
+                    Image(systemName: "person")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100)
+                        .padding(.top, 80)
             }
-            VStack {
+
+           VStack {
                 TextField("Username", text: $username)
                     .padding()
             }

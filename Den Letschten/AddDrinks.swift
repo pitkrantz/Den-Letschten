@@ -7,18 +7,23 @@
 
 import SwiftUI
 
+
+enum Drinks{
+    case beer, wine
+}
+
 struct AddDrinks: View {
     
     
     var body: some View {
         VStack(spacing: 40) {
             HStack(spacing: 40){
-                DrinkButton()
-                DrinkButton()
+                DrinkButton(drinkVersion: .beer)
+                DrinkButton(drinkVersion: .wine)
             }
             HStack(spacing: 40){
-                DrinkButton()
-                DrinkButton()
+                DrinkButton(drinkVersion: .beer)
+                DrinkButton(drinkVersion: .wine)
             }
         }
     }
