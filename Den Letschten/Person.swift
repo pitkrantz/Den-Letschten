@@ -10,14 +10,14 @@ import Foundation
 class Person: ObservableObject, Identifiable{
    
     let id = UUID()
-    let username: String
-    let email: String
+    var username: String
+    var email: String
    
     var steps: Int
     var alcohol: Double
     var beer: Int
     
-    init(username:String, email:String, steps:Int, alcohol: Double = 0, beer: Int = 0){
+    init(username:String, email:String, steps:Int = 0, alcohol: Double = 0, beer: Int = 0){
         self.username = username
         self.email = email
         self.steps = steps

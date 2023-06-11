@@ -17,6 +17,7 @@
 		94909EF02A3290D900FFC8D1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EEF2A3290D900FFC8D1 /* AccountView.swift */; };
 		94909EF42A33155C00FFC8D1 /* AddDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EF32A33155C00FFC8D1 /* AddDrinks.swift */; };
 		94909EF62A33262C00FFC8D1 /* DrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EF52A33262C00FFC8D1 /* DrinkButton.swift */; };
+		94909EF82A360D9C00FFC8D1 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94909EF72A360D9C00FFC8D1 /* viewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		94909EEF2A3290D900FFC8D1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		94909EF32A33155C00FFC8D1 /* AddDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinks.swift; sourceTree = "<group>"; };
 		94909EF52A33262C00FFC8D1 /* DrinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkButton.swift; sourceTree = "<group>"; };
+		94909EF72A360D9C00FFC8D1 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				94909EF32A33155C00FFC8D1 /* AddDrinks.swift */,
 				94909EF52A33262C00FFC8D1 /* DrinkButton.swift */,
 				94909EEF2A3290D900FFC8D1 /* AccountView.swift */,
+				94909EF72A360D9C00FFC8D1 /* viewModel.swift */,
 				94909EE32A325ECE00FFC8D1 /* PersonView.swift */,
 				94909EED2A327B5500FFC8D1 /* Person.swift */,
 				94909EEB2A32653E00FFC8D1 /* LeaderBoard.swift */,
@@ -161,6 +164,7 @@
 				94909EF02A3290D900FFC8D1 /* AccountView.swift in Sources */,
 				94909EF42A33155C00FFC8D1 /* AddDrinks.swift in Sources */,
 				94909EEE2A327B5500FFC8D1 /* Person.swift in Sources */,
+				94909EF82A360D9C00FFC8D1 /* viewModel.swift in Sources */,
 				94909EE42A325ECE00FFC8D1 /* PersonView.swift in Sources */,
 				94909EEC2A32653E00FFC8D1 /* LeaderBoard.swift in Sources */,
 				94909ED82A325A9700FFC8D1 /* ContentView.swift in Sources */,

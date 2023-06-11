@@ -10,7 +10,10 @@ import SwiftUI
 
 
 struct AccountView: View {
-    @State var username: String = ""
+    
+    @StateObject var Account: Person = userAccount
+    
+    @State var showingAlert: Bool = false
     
     @State var avatarItem: PhotosPickerItem?
     @State var avatarImage: Image?
@@ -21,6 +24,8 @@ struct AccountView: View {
                Spacer()
                 Button{
                     print("reset everything")
+                    showingAlert = true
+
                 } label: {
                     Image(systemName: "trash")
                         .resizable()
@@ -29,6 +34,17 @@ struct AccountView: View {
                         .foregroundColor(.red)
                 }
                 .padding(.trailing, 40)
+                .alert("Delete?", isPresented: $showingAlert) {
+                    HStack {
+                        Button("Yes", role: .destructive){
+                            print("yes")
+                        }
+                        Button("No", role: .cancel){
+                            print("no")
+                        }
+                        
+                    }
+                }
             }
             PhotosPicker(selection: $avatarItem, matching: .images){
                     Image(systemName: "person")
@@ -37,9 +53,11 @@ struct AccountView: View {
                         .frame(width: 100)
                         .padding(.top, 80)
             }
-
+            
+            Text("\(Account.beer)")
+            
            VStack {
-                TextField("Username", text: $username)
+               TextField("Username", text: $Account.username)
                     .padding()
             }
             .padding(.top, 100)

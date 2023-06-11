@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DrinkButton: View {
-   
+    
+    @StateObject var Account: Person = userAccount
+    
     let buttonSize: CGFloat = 50
     let drinkVersion: Drinks
     
@@ -17,8 +19,18 @@ struct DrinkButton: View {
             switch(drinkVersion){
             case .beer:
                 print("beer added")
+                Account.beer = Account.beer + 1
+                print("Current beer: \(Account.beer)")
+               
+                
+                //MARK: Change this to whatever I need don't leave it like this
+                
+                
             case .wine:
                 print("wine added")
+                Account.alcohol = Account.alcohol + 1
+                print("Current alcohol: \(Account.alcohol)")
+
             }
             
             
