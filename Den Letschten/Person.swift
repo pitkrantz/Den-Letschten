@@ -10,12 +10,12 @@ import Foundation
 class Person: ObservableObject, Identifiable{
    
     let id = UUID()
-    var username: String
-    var email: String
+    @Published var username: String
+    @Published var email: String
    
-    var steps: Int
-    var alcohol: Double
-    var beer: Int
+    @Published var steps: Int
+    @Published var alcohol: Double
+    @Published var beer: Int
     
     init(username:String, email:String, steps:Int = 0, alcohol: Double = 0, beer: Int = 0){
         self.username = username

@@ -13,8 +13,7 @@ enum Drinks{
 }
 
 struct AddDrinks: View {
-    
-    
+    @ObservedObject var Account: Person = userAccount
     var body: some View {
         VStack(spacing: 40) {
             HStack(spacing: 40){

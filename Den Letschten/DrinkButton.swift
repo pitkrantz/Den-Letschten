@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DrinkButton: View {
     
-    @StateObject var Account: Person = userAccount
+    @ObservedObject var Account: Person = userAccount
     
     let buttonSize: CGFloat = 50
     let drinkVersion: Drinks

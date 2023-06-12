@@ -16,6 +16,10 @@ struct AccountView: View {
     @State var showingAlert: Bool = false
     
     @State var avatarItem: PhotosPickerItem?
+    @State var data: Data?
+    
+    
+    
     @State var avatarImage: Image?
     
     var body: some View {
@@ -47,14 +51,49 @@ struct AccountView: View {
                 }
             }
             PhotosPicker(selection: $avatarItem, matching: .images){
-                    Image(systemName: "person")
+                if let data = data, let uiimage = UIImage(data: data){
+                    Image(uiImage: uiimage)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 200)
                         .padding(.top, 80)
+                        .mask {
+                            Circle()
+                                .frame(width: 200, height: 200)
+                        }
+                }
+                else{
+                    Image(systemName: "person.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                            .padding(.top, 80)
+                }
+                
+            }
+            .frame(width: 200, height: 200)
+            .onChange(of: avatarItem) { newValue in
+                guard let item = avatarItem else{
+                    return
+                }
+                item.loadTransferable(type: Data.self){ result in
+                    switch result{
+                    case .success(let data):
+                        if let data = data{
+                            self.data = data
+                        }
+                        else{
+                            print("Data is nil")
+                        }
+                    case .failure(let failure):
+                        fatalError("\(failure)")
+                    
+                    }
+                }
             }
             
-            Text("\(Account.beer)")
+            Text("\(Account.username)")
+            
             
            VStack {
                TextField("Username", text: $Account.username)
